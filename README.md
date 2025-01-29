@@ -111,16 +111,21 @@ The application is easily configurable to **HTTPS**.
 
 ---
 
+## 📹 DEMO  
+
+[**VIDEO**](no link)  
+---
+
 ## 📸 Screenshots  
 
 | Feature | Screenshot / Video |
 |---------|-----------|
-| **Live Crypto (Not logged in)** | ![click me](screenshots/live_prices.png) |
-| **Login Page** | ![click me](screenshots/buy_sell.png) |
-| **Live Crypto (Logged in)** | ![click me](screenshots/live_prices.png) |
-| **Account Information** | ![click me](screenshots/updated_balance.png) |
-| **Transaction History** | ![click me](screenshots/live_prices.png) |
-| **Reset Account** | ![click me](screenshots/updated_balance.png) |
+| **Live Crypto (Not logged in)** | ![click me](demo/screenshots/1.png) |
+| **Login Page** | ![click me](demo/screenshots/2.png) |
+| **Live Crypto (Logged in)** | ![click me](demo/screenshots/3.png) |
+| **Account Information** | ![click me](demo/screenshots/4.png) |
+| **Transaction History** | ![click me](demo/screenshots/5.png) |
+| **Reset Account** | ![click me](demo/screenshots/6.png) |
 
 ---
 
@@ -138,6 +143,7 @@ The application is easily configurable to **HTTPS**.
 - **Database optimization** (e.g connection pooling, size)
 - **Microservices architecture**
 - **Detailed Documentation of Endpoints and Code** to improve maintainability
+- **Better design, layout, and interactivity** in the frontend to improve the user experience
 - **Frontend Lazy Loading** to improve page load times for larger data
 ---
 
