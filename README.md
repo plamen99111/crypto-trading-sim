@@ -119,7 +119,7 @@ The application is easily configurable to **HTTPS**.
 
 ## 📸 Screenshots  
 
-| Feature | Screenshot / Video |
+| Feature | Screenshot |
 |---------|-----------|
 | **Live Crypto (Not logged in)** | ![click me](demo/screenshots/1.png) |
 | **Login Page** | ![click me](demo/screenshots/2.png) |
