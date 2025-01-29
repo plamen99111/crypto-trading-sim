@@ -1,0 +1,418 @@
+/* General Navbar Styles */
+.custom-navbar {
+    background-color: #f8f9fa;
+    /* Light background */
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 10px 15px;
+    display: flex;
+    /* Make the navbar a flex container */
+    justify-content: space-between;
+    /* Push elements to the edges */
+    align-items: center;
+}
+
+/* Logo Container */
+.custom-navbar .logo-container {
+    justify-content: flex-start;
+}
+
+/* Logo Styling */
+.custom-logo {
+    height: auto;
+    max-height: 30px;
+    /* Default max size for larger screens */
+    width: auto;
+}
+
+.custom-navbar .text-logo-space {
+    margin-left: 10px;
+
+    /* Adjust this value for desi/* General Navbar Styles */
+    .custom-navbar {
+        background-color: #f8f9fa;
+        font-size: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Logo Container */
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .text-logo-space {
+        margin-left: 10px;
+    }
+
+    /* Toggler Button (only for small screens) */
+    .navbar-toggler {
+        display: none;
+        border: none;
+    }
+
+    /* Nav Container */
+    .nav-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-container.expanded {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link {
+        color: #5A5A66;
+        margin: 0 10px;
+        font-size: 1rem;
+        padding: 5px 8px;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        color: #F4A261;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
+    .nav-link.active {
+        font-weight: bold;
+        color: #3044d8;
+        border-bottom: 2px solid #F4A261;
+    }
+
+    /* Dropdown Menu */
+    .settings-dropdown {
+        position: relative;
+    }
+
+    .settings-dropdown .dropdown-toggle {
+        background: none;
+        border: none;
+        color: #5A5A66;
+        font-size: 1rem;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .settings-dropdown .dropdown-toggle:hover {
+        background-color: #f0f0f0;
+        color: #3044d8;
+        transform: scale(1.1);
+    }
+
+    .settings-dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        z-index: 1000;
+    }
+
+    .settings-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Dropdown Item Styling */
+    .dropdown-item {
+        font-size: 0.9rem;
+        color: #5A5A66;
+        padding: 8px 15px;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+        color: #3044d8;
+    }
+
+    .language-dropdown {
+        display: flex;
+        align-items: center;
+    }
+
+    .language-dropdown .dropdown-toggle {
+        background: none;
+        border: none;
+        color: #5A5A66;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .language-dropdown .dropdown-toggle:hover {
+        background-color: #f0f0f0;
+        color: #F4A261;
+        transform: scale(1.1);
+    }
+
+    .language-dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        z-index: 1000;
+    }
+
+    .language-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Language Dropdown Items */
+    .language-dropdown .dropdown-item {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        color: #5A5A66;
+        padding: 5px 15px;
+    }
+
+    .language-dropdown .dropdown-item img {
+        width: 20px;
+        height: 15px;
+        margin-right: 8px;
+    }
+
+    .language-dropdown .dropdown-item:hover {
+        background-color: #f0f0f0;
+        color: #3044d8;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 992px) {
+        .navbar-toggler {
+            display: block;
+        }
+
+        .nav-container {
+            display: block;
+            width: 100%;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            margin: 5px 0;
+        }
+    }
+}
+
+/* Nav Container */
+.custom-navbar .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Align links to the right */
+    margin-left: auto;
+    /* Push the nav items to the far right */
+    text-align: center;
+}
+
+/* Toggler Button on Small Screens */
+.custom-navbar .navbar-toggler {
+    order: 2;
+    /* Ensure the toggler button is last */
+    margin-left: auto;
+    /* Push the toggler button to the far right */
+    border: none;
+    /* Remove the border from the button */
+}
+
+/* Navigation links */
+.custom-navbar .nav-link {
+    color: #5A5A66 !important;
+    /* Dark text for links */
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    overflow: hidden;
+    /* Prevent overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis if the text is too long */
+    padding: 5px 8px;
+    /* Adjust padding */
+    text-align: center;
+    /* Align text */
+}
+
+/* Scaling effect on hover for nav links */
+.custom-navbar .nav-link:hover {
+    color: #3044d8 !important;
+    /* Highlight color */
+    text-decoration: none;
+    transform: scale(1.1);
+    /* Slight scaling */
+}
+
+/* Active Nav Links */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    color: #F4A261 !important;
+    border-bottom: 2px solid #F4A261;
+}
+
+
+/* General Dropdown Menu */
+.settings-dropdown .dropdown-menu {
+    border: 1px solid #ddd;
+    /* Subtle border for dropdown */
+    overflow: hidden;
+    /* Prevent hover effects from spilling outside */
+    padding: 0;
+    /* Remove extra padding */
+    overflow: hidden;
+    /* Prevent overflow issues */
+}
+
+/* Remove margin for dropdown links specifically */
+.custom-navbar .settings-dropdown .dropdown-item {
+    margin: 0 !important;
+    /* Override any existing margin */
+}
+
+/* Dropdown Items */
+.settings-dropdown .dropdown-item {
+    font-size: 0.9rem;
+    /* Adjust font size */
+    color: #5A5A66;
+    /* Default text color */
+    padding: 8px 15px;
+    /* Uniform padding */
+    background-color: transparent;
+    /* Default background */
+    text-align: left;
+    /* Align text to the left */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth hover effect */
+    box-sizing: border-box;
+    /* Ensure padding doesn't increase width */
+    width: 100%;
+    /* Ensure items take full width of dropdown */
+    display: block;
+    /* Ensure items behave like block elements */
+}
+
+/* Hover Effect */
+.settings-dropdown .dropdown-item:hover {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    color: #3044d8;
+    /* Blue text */
+    transform: none;
+    box-shadow: none;
+    /* Remove hover box shadow */
+    border: none;
+    /* No border on hover */
+}
+
+/* Language Dropdown Styles */
+.dropdown-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    max-height: 30px;
+}
+
+.dropdown-title .flagIcon {
+    width: 22px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-size: 22px;
+}
+
+
+.dropdown-title .language-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    /* Remove bolding */
+    color: #5A5A66;
+    font-size: 0.95rem;
+}
+
+/* Language Dropdown Items */
+.language-dropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #5A5A66;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.language-dropdown .dropdown-item img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.language-dropdown .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #3044d8;
+}
+
+/* Hide the dropdown arrow */
+.language-dropdown .dropdown-toggle::after {
+    display: none;
+    /* Removes the default arrow */
+}
+
+/* Adjust button height if necessary to maintain the navbar height */
+.language-dropdown .dropdown-toggle {
+    padding-right: 10px;
+    /* Adjust padding to remove extra space from the arrow */
+    color: #5A5A66;
+    /* Default color */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Added transition for scaling */
+}
+
+/* Add hover effect to the language button */
+.language-dropdown .dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    /* Similar hover effect as other nav links */
+    color: #3044d8;
+    /* Highlight color */
+    transform: scale(1.1);
+    /* Slight scaling on hover */
+}
+
+/* Navbar Collapse (Responsive Styling) */
+.navbar-collapse {
+    justify-content: flex-end;
+    /* Align links to the right */
+}

@@ -1,0 +1,115 @@
+/* General Styling */
+.transactionPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7c8af0, #3680d0);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.transactionContainer {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transactionContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.transactionTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3044d8;
+    margin-bottom: 20px;
+}
+
+.transactionList {
+    list-style: none;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.transactionItem {
+    background-color: #f3f4f6;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.transactionItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.transactionDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.transactionCryptoName {
+    font-weight: bold;
+    color: #3044d8;
+}
+
+.transactionType {
+    font-weight: bold;
+    color: #ff5733;
+    /* Color for transaction type */
+}
+
+.transactionPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.transactionQuantity {
+    color: #28a745;
+}
+
+.transactionPriceValue {
+    color: #333;
+}
+
+.transactionDate {
+    margin-top: 8px;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+.noTransactions {
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Add these styles to your CSS for profit/loss formatting */
+.balance,
+.totalProfit,
+.finalBalance {
+    margin-top: 20px;
+}
+
+.profit {
+    color: green;
+}
+
+.loss {
+    color: red;
+}

@@ -1,0 +1,90 @@
+/* General Styling */
+.accountPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7c8af0, #3680d0);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.accountContainer {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accountContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.accountTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3044d8;
+    margin-bottom: 20px;
+}
+
+.userInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.userInfoLabel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.userInfoValue {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Reset Button */
+.resetButton {
+    background: linear-gradient(135deg, #3044d8, #1e3dbf);
+    color: white;
+    font-size: 1.6rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.resetButton:hover {
+    background: linear-gradient(135deg, #1e3dbf, #162da3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.resetButton:active {
+    transform: scale(0.95);
+}
+
+.resetButton:disabled {
+    background: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Success and Error Messages */
+.successMessage {
+    color: #28a745;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.errorMessage {
+    color: #dc3545;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}

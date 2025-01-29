@@ -1,0 +1,234 @@
+/* Base styles (default for all screen sizes) */
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets//background/loginbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0 5vw;
+    animation: fadeIn 2s ease-in-out;
+    /* Smooth entrance */
+
+}
+
+.loginContainer {
+    background-color: white;
+    padding: 4vh 4vw;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.loginTitle {
+    font-size: 6vw;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    color: #333;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    animation: fadeInUp 1s ease-in-out;
+    /* Smooth fade-in effect */
+}
+
+.loginInput {
+    padding: 2vh 4vw;
+    font-size: 4vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.loginInput:focus {
+    border: 2px solid #3044d8;
+}
+
+.loginButton {
+    padding: 2vh 4vw;
+    font-size: 4vw;
+    background-color: #3044d8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loginButton:hover {
+    background-color: #2236d4;
+    /* Slightly darker shade for hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    /* Lift effect */
+}
+
+.loginButton:active {
+    background-color: #0f25d2;
+    /* Even darker shade for active state */
+    transform: scale(0.98);
+    /* Slight press-in effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled state for loading or inactive button */
+.loginButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 2vh;
+    font-size: 3vw;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9) translateY(-30px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Styles for min-width: 1024px */
+@media (min-width: 1024px) {
+    .loginContainer {
+        padding: 4vh 3vw;
+        max-width: 20vw;
+    }
+
+    .loginTitle {
+        font-size: 1.5vw;
+    }
+
+    .loginInput {
+        font-size: 0.7vw;
+        padding: 0.9vh 0.5vw;
+    }
+
+    .loginButton {
+        font-size: 0.7vw;
+        padding: 0.9vh 0.5vw;
+    }
+
+    .errorMessage {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .loginContainer {
+        padding: 4vh 4vw;
+    }
+
+    .loginTitle {
+        font-size: 4vw;
+    }
+
+    .loginInput {
+        font-size: 1.7vw;
+        padding: 2vh 2vw;
+    }
+
+    .loginButton {
+        font-size: 1.7vw;
+        padding: 2vh 2vw;
+    }
+
+    .errorMessage {
+        font-size: 3vw;
+    }
+}
+
+/* Styles for max-width: 768px */
+@media (max-width: 768px) {
+    .loginContainer {
+        padding: 4vh 4vw;
+    }
+
+    .loginTitle {
+        font-size: 6vw;
+    }
+
+    .loginInput {
+        font-size: 3vw;
+        padding: 2vh 3vw;
+    }
+
+    .loginButton {
+        font-size: 3vw;
+        padding: 2vh 3vw;
+    }
+
+    .errorMessage {
+        font-size: 3.5vw;
+    }
+}
+
+/* Styles for max-width: 480px */
+@media (max-width: 480px) {
+    .loginContainer {
+        padding: 3vh 5vw;
+    }
+
+    .loginTitle {
+        font-size: 8vw;
+    }
+
+    .loginInput {
+        font-size: 4vw;
+        padding: 2vh 3vw;
+    }
+
+    .loginButton {
+        font-size: 4vw;
+        padding: 2vh 3vw;
+    }
+
+    .errorMessage {
+        font-size: 4vw;
+    }
+}
