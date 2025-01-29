@@ -113,7 +113,7 @@ The application is easily configurable to **HTTPS**.
 
 ## 📹 DEMO  
 
-[**VIDEO**](no link)  
+[**VIDEO**]((demo/videos/demo.mp4)  
 ---
 
 ## 📸 Screenshots  
